@@ -115,3 +115,111 @@ th { background: var(--cream); font-weight: 700; }
   td::before { content: attr(data-label); font-weight: 700; color: var(--soft-ink); }
   tr td:last-child { border-bottom: 0; }
 }
+
+/* EmailOctopus embed: match Kind Reset type, colours, and stacked layout.
+   Higher specificity than the injected form stylesheet so these win. */
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] {
+  --text-colour: var(--ink);
+  --font-family: "Lexend KR", system-ui, -apple-system, "Segoe UI", sans-serif;
+  max-width: 100% !important;
+}
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] .form-container {
+  max-width: none;
+  margin: 0;
+}
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] .emailoctopus-form-wrapper {
+  margin-top: 0;
+}
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] .emailoctopus-form {
+  --label-size: 16px;
+  --field-colour: #fff;
+  --label-colour: var(--ink);
+  --button-colour: var(--clay);
+  --button-text-colour: #fff;
+  --field-border-colour: #b9b2a6;
+  --base-font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] .main-form,
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] [eo-form-fields-container] {
+  display: contents;
+}
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] .emailoctopus-form-row {
+  width: 100%;
+  margin: 0 0 14px;
+  min-width: 0;
+}
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] .emailoctopus-form input:not([type=submit]):not([type=checkbox]) {
+  width: 100%;
+  font: inherit;
+  font-size: 18px;
+  padding: 13px 14px;
+  border: 2px solid #b9b2a6;
+  border-radius: 12px;
+  background: #fff;
+  color: var(--ink);
+  line-height: 1.3;
+}
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] .emailoctopus-form input:not([type=submit]):focus {
+  border-color: var(--sage-dark);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--sage-light);
+}
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] .emailoctopus-form-row-consent {
+  order: 10;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 16px;
+  margin: 4px 0 18px;
+  color: var(--ink);
+}
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] .emailoctopus-form-row-consent input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  margin: 2px 0 0;
+  flex: 0 0 auto;
+  accent-color: var(--sage-dark);
+}
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] .emailoctopus-form-row-consent label {
+  display: inline;
+  font-size: 16px;
+  color: var(--ink);
+  font-family: inherit;
+}
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] .emailoctopus-form input[type=submit] {
+  order: 20;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font: inherit;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.2;
+  background: var(--clay);
+  color: #fff;
+  border: 0;
+  border-radius: 12px;
+  padding: 16px 20px;
+  cursor: pointer;
+  margin: 0;
+}
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] .emailoctopus-form input[type=submit]:hover {
+  background: var(--clay-dark);
+  color: #fff;
+}
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] .emailoctopus-success-message,
+.optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] .emailoctopus-error-message {
+  text-align: left;
+  color: var(--ink) !important;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+@media (min-width: 720px) {
+  .optin [data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"] .emailoctopus-form input[type=submit] {
+    width: auto;
+    min-width: 280px;
+  }
+}
