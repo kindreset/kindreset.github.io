@@ -23,37 +23,16 @@
     <h2 id="optin-title">Send me the reset</h2>
 
     <!--
-      ===================== EMAILOCTOPUS FORM PLACEHOLDER =====================
-      The EmailOctopus form exists as a draft. Do not paste the live embed
-      until Affiliate Boss says the destination URLs return 200.
-      This dummy form does NOT submit anywhere: no action URL, the button is
-      type="button", and the submit event is cancelled.
-      When List Keeper publishes the form:
-        1. Replace everything between the START and END markers with the
-           EmailOctopus embed code.
-        2. Keep: email (required), first name (optional), the unchecked consent
-           box with the exact wording below (required: the real embed must
-           block submit until it is ticked), and the link to privacy.html.
-        3. Form setting "Redirect URL" (after submit) -> thank-you.html.
-           Double opt-in is ON: the PDF goes out only in email 00 after confirm.
-        4. Delete the .dev-flag line and the placeholder <script> at the bottom.
-      ============================ START PLACEHOLDER ===========================
+      EmailOctopus inline form 7b22d070-e764-11f1-935c-251dbdf0d8b6 (from
+      Email/Nothing Sticks Reset/form-embed.html). The embed includes email
+      (required), first name (optional), the button “Send me the reset”, and
+      a consent checkbox with the wording “Send me the reset sheet and Kind
+      Reset emails. Unsubscribe anytime.” The form script blocks submit
+      until the box is ticked. Double opt-in is on. Redirect URL:
+      https://kindreset.github.io/thank-you.html. Keep the privacy link in
+      the fineprint below. Do not add a second consent box.
     -->
-    <span class="dev-flag">Placeholder form · not connected</span>
-    <form id="optin-form" class="optin-form" novalidate onsubmit="return false;" data-placeholder="emailoctopus">
-      <div class="field">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required>
-      </div>
-      <div class="field">
-        <label for="first-name">First name <span class="opt">(optional)</span></label>
-        <input id="first-name" name="first_name" type="text" autocomplete="given-name">
-      </div>
-      <label class="consent"><input type="checkbox" name="consent" id="consent" required><span>Send me the reset sheet and Kind Reset emails. Unsubscribe anytime.</span></label>
-      <button type="button" class="btn" id="optin-button">Send me the reset</button>
-      <p class="placeholder-note" id="placeholder-note" role="status">This form isn’t connected yet, so nothing was sent.</p>
-    </form>
-    <!-- ============================= END PLACEHOLDER ========================== -->
+    <script async src="https://eomail5.com/form/7b22d070-e764-11f1-935c-251dbdf0d8b6.js" data-form="7b22d070-e764-11f1-935c-251dbdf0d8b6"></script>
 
     <ol class="steps-next">
       <li>We email you a link to confirm your address. Nothing else arrives until you click it.</li>
@@ -88,11 +67,5 @@
   <p>© 2026 Kind Reset. Practical home and day routines. Nothing here is medical advice.</p>
 </div></footer>
 
-<!-- Placeholder behaviour only. Delete when the EmailOctopus embed goes in. -->
-<script>
-  document.getElementById('optin-button').addEventListener('click', function () {
-    document.getElementById('placeholder-note').classList.add('show');
-  });
-</script>
 </body>
 </html>
